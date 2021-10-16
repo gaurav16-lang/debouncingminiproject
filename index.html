@@ -12,15 +12,16 @@
     <title>popularfilm</title>
     <style>
         * {
-            margin-left: 0px;
-            margin-top: 0px;
-            margin-right: 0px;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
         
         .search {
             width: 100%;
             border: 1px solid #0d082f;
             background-color: #0d082f;
+            display: flex;
         }
         
         #films {
@@ -156,6 +157,22 @@
             margin-bottom: 0px;
             font-size: 20px;
         }
+        
+        .makelogin {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: red;
+            align-content: center;
+            margin-top: 20px;
+            margin-right: 80px;
+            object-fit: cover;
+        }
+        
+        .makelogin img {
+            max-width: 100%;
+            object-fit: cover;
+        }
     </style>
 </head>
 
@@ -168,6 +185,9 @@
                 <div id="dropdown">
 
                 </div>
+            </div>
+            <div class="makelogin" onclick="signup()">
+                <img src="https://cdn-icons.flaticon.com/png/512/5654/premium/5654864.png?token=exp=1634413158~hmac=2543f2de2e4f0c213be1dd2d65f677e6" alt="">
             </div>
 
 
@@ -386,6 +406,10 @@
 
     }
     getmovie();
+
+    function signup() {
+        window.location.href = "signup.html";
+    }
 </script>
 
 </html>
